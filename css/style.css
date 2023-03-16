@@ -1,0 +1,63 @@
+/*CSS index */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.search {
+    background-image: url(../img/bg-search.jpg);
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+}
+
+.searching-form {
+    display: flex;
+    /* justify-content: center;
+    align-content: center; */
+    margin-top: 10%;
+    max-width: 60%;
+}
+
+.hl-ch {
+    width: 20rem;
+    position: relative;
+}
+
+.img-cruv {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.hl-ch-content {
+    position: absolute;
+    bottom: 50px;
+    left: 20%;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 0;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ch_name {
+    color: rgb(35, 31, 66);
+}
+
+.ch_name:hover {
+    color: rgb(70, 9, 238);
+}
+
+.footer {
+    color: navy;
+}
+
+
+/*CSS index */
