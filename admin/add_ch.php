@@ -4,44 +4,52 @@ include('../config/adminheader.php');
 include('../config/constant_admin.php');
 ?>
 
-<section class="container-fluid text-center form-bg pb-4">
-    <h1 class="fw-bold py-5 fst-italic"> Thêm Bài Viết </h1>
+<section class="container-fluid text-center form-bg py-4">
+    <h1 class="fw-bold my-5 fst-italic"> Thêm bài viết </h1>
     <div class="row">
         <div class="col-12">
             <form method = "POST">
                 <div class="mb-3">
-                    <label class="form-label input-label ">Tên Bài Viết</label>
-                    <input type="text" class="form-control input-text" name="guest_name" id="guest_name">
+                    <label class="form-label input-label">Tên dịch vụ</label>
+                    <input type="text" class="form-control  input-text" name="ch_Name" id="ch_Name">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label input-label">Tuổi</label>
-                    <input type="text" class="form-control input-text" name="guest_age" id="guest_age">
+                    <label class="form-label input-label">Giá</label>
+                    <input type="text" class="form-control  input-text" name="ch_price" id="ch_price">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label input-label">Giới Tính</label>
-                    <input type="text" class="form-control input-text" name="guest_gender" id="guest_gender">
+                    <label class="form-label input-label">Ngày bắt đầu</label>
+                    <input type="date" class="form-control  input-text" name="ch_day_start" id="ch_day_start">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label input-label">Địa chỉ</label>
-                    <input type="text" class="form-control input-text" name="guest_address" id="guest_address">
+                    <label class="form-label input-label">Ngày kết thúc</label>
+                    <input type="date" class="form-control  input-text" name="ch_day_end" id="ch_day_end">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label input-label">Số điện thoại</label>
-                    <input type="text" class="form-control input-text" name="guest_phone" id="guest_phone">
+                    <label class="form-label input-label">Thời gian diễn ra</label>
+                    <input type="text" class="form-control  input-text" name="ch_days" id="ch_days">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label input-label">Email</label>
-                    <input type="text" class="form-control input-text" name="guest_email" id="guest_email">
+                    <label class="form-label input-label">Địa điểm</label>
+                    <input type="text" class="form-control  input-text" name="ch_location" id="ch_location">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label input-label">Tên đăng nhập</label>
-                    <input type="text" class="form-control input-text" name="guest_username" id="guest_username">
+                    <label class="form-label input-label">Ảnh</label>
+                    <input type="text" class="form-control  input-text" name="img" id="img">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label input-label">Mật khẩu</label>
-                    <input type="password" class="form-control input-text" name="guest_password" id="guest_password">
+                    <label class="form-label input-label">Số điện thoại liên lạc</label>
+                    <input type="text" class="form-control  input-text" name="ch_phone_contact" id="ch_phone_contact">
                 </div>
-                <button type="submit" class=" btn btn-primary btn-lg" name="submit">Thêm người dùng</button>
+                <div class="mb-3">
+                    <label class="form-label input-label">Người phụ trách</label>
+                    <input type="text" class="form-control  input-text" name="ch_guild" id="ch_guild">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label input-label">Số lượng chỗ tối đa</label>
+                    <input type="text" class="form-control  input-text" name="ch_number" id="ch_number">
+                </div>
+                <button type="submit" class=" btn btn-primary btn-lg" name="submit">Thêm bài viết</button>
             </form>
         </div>
     </div>
@@ -51,29 +59,29 @@ include('../config/constant_admin.php');
 
 
 <?php
+
 if(isset($_POST['submit'])){
-    $guest_name =$_POST['guest_name'];
-    $guest_age = $_POST['guest_age'];
-    $guest_gender = $_POST['guest_gender'];
-    $guest_address = $_POST['guest_address'];
-    $guest_phone = $_POST['guest_phone'];
-    $guest_email = $_POST['guest_email'];
-    $guest_username = $_POST['guest_username'];
-    $guest_password = $_POST['guest_password'];
-     $sql ="INSERT INTO `user`( `guest_name`, `guest_age`, `guest_gender`, `guest_address`, `guest_phone`, `guest_email`,`guest_username`,`guest_password`)
-     VALUES ('$guest_name','$guest_age','$guest_gender','$guest_address','$guest_phone','$guest_email','$guest_username','$guest_password')";
-    $result = mysqli_query($conn,$sql);
-    if($result > 0){
+    $ch_Name = $_POST['ch_Name'];;
+      $ch_price = $_POST['ch_price'];
+      $ch_day_start = $_POST['ch_day_start'];
+      $ch_day_end = $_POST['ch_day_end'];
+      $ch_days = $_POST['ch_days'];
+      $ch_location = $_POST['ch_location'];
+      $img = $_POST['img'];
+      $ch_phone_contact = $_POST['ch_phone_contact'];
+      $ch_guild = $_POST['ch_guild'];
+      $ch_number = $_POST['ch_number'];
+      $sql = "INSERT INTO  ch(ch_Name, ch_price, ch_day_start, ch_day_end, ch_days, ch_location, img, ch_phone_contact, ch_guild, ch_number) VALUE ('$ch_Name', '$ch_price', '$ch_day_start', '$ch_day_end', '$ch_days', '$ch_location', '$img', '$ch_phone_contact', '$ch_guild', '$ch_number')";
+      $result = mysqli_query($conn,$sql);
+      if($result > 0){
         $_SESSION['noti']= "Đã thêm thành công";
-        header("location:mana_guest.php");
+        header("location:mana_ch.php");
     }else{
         $_SESSION['noti'] =" Lỗi!!!!";
-      header("location:mana_guest.php");
+      header("location:mana_ch.php");
     }
 }
-
-
-
-include('../config/adminfooter.php')
+include('../config/adminfooter.php');
+?>
 
 ?>

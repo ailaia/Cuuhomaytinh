@@ -22,7 +22,7 @@ ob_start();
 ?>
 
 <section class="container-fluid text-center form-bg py-4">
-    <h1 class="fw-bold my-5 fst-italic"> Cập nhập thông tin ch </h1>
+    <h1 class="fw-bold my-5 fst-italic"> Cập nhập thông tin Dịch vụ </h1>
     <div class="row">
         <div class="col-12">
             <form method = "POST">

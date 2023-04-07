@@ -54,12 +54,12 @@ img{
  <div class="container mt-5">
      <h1 class="text-center fw-bold my-4 fst-italic"> Chi tiết bài viết</h1>
         <div class="ch-detail d-flex justify-content-around ">
-            <div class= "ch-img ch_detail">
-                <img src="<?php echo $img?>" alt="">
+            <div class= "ch-img ch_detail" style="width:1000px">
+                <img src="<?php echo $img?>"  class="img-fluid  img-cruv" alt="">
             </div>
-            <div class="product-info bg-light ms-3">
+            <div class="product-info bg-light ms-3" style="width: 500px">
                 <h4><?php echo $ch_Name ?></h4>
-                <p > Khởi hành: <?php echo $ch_day_start ?>
+                <p > Bắt đầu: <?php echo $ch_day_start ?>
                 <p > Kết thúc: <?php echo $ch_day_end ?>
                 <p > Địa điểm:  <?php echo $ch_location ?>
                 <p > Số lượng người tối đa: <?php echo $ch_number ?> người </p>

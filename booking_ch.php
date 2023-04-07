@@ -18,7 +18,7 @@ include('config/constant.php')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <title>CSE458_Travel</title>
+    <title>Đội cứu hộ máy tính</title>
   </head>
   <body >
     <!--Navbar-->
@@ -89,24 +89,24 @@ include('config/constant.php')
 
         <div class="container-sm">
             <div class="row align-items-start">
-                        <div class="col">
-                            <a href="#">
-                                <img src="<?php echo $img?> " class="img-fluid  img-cruv"  alt="... "> <!--lấy ảnh từ csdl-->
-                            </a>
-                        </div>
-                
-                        <div class="col-6 cruv">
-                            <h2 class="ch_Name">
-                                <?php echo $ch_Name?> <!--lấy tên của ch từ csdl-->
-                            </h2>
-                                <p><b> Số lượng người tối đa: <?php echo $ch_number ?> người </b></p><!--lấy số lượng khách của ch từ csdl-->
-                                <p><b> Khởi hành: <?php echo $ch_day_start ?> </b></p>
-                                <p><b> Kết thúc: <?php echo $ch_day_end ?> </b></p>
-                                <p><b> Địa điểm:  <?php echo $ch_location ?> </b></p>
-                                <p><b> Hướng dẫn viên: <?php echo $ch_guild ?> </p>
+                <div class="col">
+                    <a href="#">
+                        <img src="<?php echo $img?> " class="img-fluid  img-cruv"  alt="... "> <!--lấy ảnh từ csdl-->
+                    </a>
+                </div>
+        
+                <div class="col-6 cruv">
+                    <h2 class="ch_Name">
+                        <?php echo $ch_Name?> <!--lấy tên của ch từ csdl-->
+                    </h2>
+                        <p><b> Số lượng người tối đa: <?php echo $ch_number ?> người </b></p><!--lấy số lượng khách của ch từ csdl-->
+                        <p><b> Bắt đầu: <?php echo $ch_day_start ?> </b></p>
+                        <p><b> Kết thúc: <?php echo $ch_day_end ?> </b></p>
+                        <p><b> Địa điểm:  <?php echo $ch_location ?> </b></p>
+                        <p><b> Người phụ trách: <?php echo $ch_guild ?> </p>
 
-                        
-                         </div>
+                
+                </div>
             </div>
         </div>
         <?php
@@ -141,6 +141,10 @@ include('config/constant.php')
                         <div class="mb-3">
                             <label class="form-label">Địa chỉ</label>
                             <input type="text" class="form-control forminputname input-lg" name="booking_guest_address" id="booking_guest_address">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Thời gian</label>
+                            <input type="datetime-local" class="form-control forminputname input-lg" name="booking_day" id="booking_day">
                         </div>
                         <div class="mx-auto" style="width: 200px;">
                             <button type="submit" name="submit" class="btn btn-info btn-lg"> Đặt Lịch Ngay</button>

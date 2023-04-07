@@ -31,7 +31,7 @@
                 ?>
 
 <div class="">
-        <h2 class=" d-flex justify-content-center align-items-center mt-5"> ĐƠN ĐẶT ch ĐANG CHỜ XỬ LÝ </h2>
+        <h2 class=" d-flex justify-content-center align-items-center mt-5"> ĐƠN ĐẶT LỊCH ĐANG CHỜ XỬ LÝ </h2>
 
     <div class ="container">
                 <a href="detail_booking_ch.php?booking_id=<?php echo $booking_id ?>">

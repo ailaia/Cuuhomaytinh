@@ -56,7 +56,7 @@ include('config/constant.php');
     <section class=" mt-5 bg-light ">
 
 
-        <h3 class="text-center my-4 fw-bold fs-1">Các Hoạt Động Của Đội Cứu Hộ Máy Tính</h3>
+        <h3 class="text-center my-4 fw-bold fs-1">Các Dịch Vụ Của Đội Cứu Hộ Máy Tính</h3>
         <div class=" container d-flex   ">
 
         <?php
@@ -77,8 +77,8 @@ include('config/constant.php');
         
 
             <div class=" me-4">
-                <a href="#">
-                    <img src="<?php echo $img?> " class="card-img-top img-cruv " alt="... "><!--lấy ảnh từ csdl-->
+                <a href="#" >
+                    <img src="<?php echo $img?>" style="width: 400px; height: 270px" class="card-img-top img-cruv " alt="... "><!--lấy ảnh từ csdl-->
                 </a>
                 <div class="card-body ">
                     <a href="detail.php?ch_id=<?php echo $ch_id?>">

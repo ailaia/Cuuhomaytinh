@@ -5,7 +5,7 @@ include('../config/constant_admin.php');
 ?>
  
 <div class="container-fluid">
-    <h1 class="fw-bold my-5 fst-italic"> Danh sách các đơn đặt ch </h1>
+    <h1 class="fw-bold my-5 fst-italic"> Danh sách các đơn đặt lịch </h1>
     
 
     <?php
@@ -26,7 +26,7 @@ include('../config/constant_admin.php');
         <th scope="col">Email</th>
         <th scope="col">Địa chỉ</th>
         <th scope="col">Số điện thoại</th>
-        <th scope="col">Ngày giờ đặt ch</th>
+        <th scope="col">Ngày giờ đặt</th>
         <th scope="col">Trạng thái</th>
         <th scope="col">Xử lí đơn</th>
         </tr>
@@ -71,7 +71,7 @@ include('../config/constant_admin.php');
       </td>
       
       <td>
-            <a href="report.php?booking_id=<?php echo $booking_id ?>" class="btn btn-outline-primary"> Xác nhận đơn đặt ch </a>
+            <a href="report.php?booking_id=<?php echo $booking_id ?>" class="btn btn-outline-primary"> Xác nhận đơn đặt </a>
       </td>
     </tr>
 
