@@ -5,9 +5,6 @@ include('config/constant.php')
 
 ?>
 
-<!-- Bắt đầu code -->
-
-
     
    
         <?php
