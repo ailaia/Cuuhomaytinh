@@ -8,6 +8,7 @@ include('config/header.php');
 include('config/constant.php');
 ?>
 
+
     <?php
     if(isset($_SESSION['register'])){
         echo $_SESSION['register'];

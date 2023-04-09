@@ -7,7 +7,6 @@ include('config/constant.php');
 
 ?>
 
-
 <style>
 .ch_detail{
     color: black;

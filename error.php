@@ -8,7 +8,7 @@ if(isset($_SESSION['register'])){
 <!doctype html>
 <html lang="en">
   <head>
-    
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +21,7 @@ if(isset($_SESSION['register'])){
     <title>CSE458_Travel</title>
   </head>
   <body >
+    
     <!--Navbar-->
     <section>
         <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
